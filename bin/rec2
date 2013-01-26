@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'aws-sdk'
+
+# Load the auth information 
+config_file = File.join(File.dirname(__FILE__), "config/aws_config.yml")
+AWS.config(YAML.load(File.read(config_file)))
+
+# Create a new EC2 instance
+ec2 = AWS::EC2.new()
+
+ec2.instances.each do | i |
+  puts "#{"Instance ID".ljust(20)} | #{"Instance Type".ljust(20)} | #{"Image ID".ljust(20)} | #{"Status".ljust(20)} | #{"IP Address".ljust(20)} | #{"Host".ljust(50)}"
+  puts "-" * 165
+  puts "#{i.id.ljust(20)} | #{i.instance_type.ljust(20)} | #{i.image_id.ljust(20)} | #{i.status.to_s.ljust(20)} | #{i.ip_address.ljust(20)} | #{i.dns_name.ljust(20)}"
+end
