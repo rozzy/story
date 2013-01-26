@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "ruby-aws-tools"
   s.version     = Cwgem::RubyAWS::VERSION
   s.authors     = ["Chris White"]
-  s.email       = ["cwhite@engineyard.com"]
+  s.email       = ["cwprogram@live.com"]
   s.homepage    = "http://github.com/engineyard/ruby-aws-tools"
   s.summary     = %q{A gem to work with the AWS API through a command line interface}
   s.description = %q{This gem is meant to provide an interface to work with the Amazon AWS API. It does so through various proxies as well as a command line interface.}
