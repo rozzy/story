@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Story::VERSION
   spec.authors       = ["Rozzy"]
   spec.email         = ["berozzy@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Ruby blog engine}
+  spec.summary       = %q{Simple blog engine}
+  spec.homepage      = "https://github.com/rozzy/story"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
