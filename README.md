@@ -1,4 +1,0 @@
-story
-=====
-
-Ruby blog engine
