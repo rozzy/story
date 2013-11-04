@@ -2,7 +2,7 @@ require "story/version"
 require "sinatra"
 
 module Story
-  class Story < Sinatra::Base
+  class Base < Sinatra::Base
     $db = Hash.new
 
     include DataBase
