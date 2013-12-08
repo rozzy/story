@@ -23,9 +23,17 @@ module Story
       @additional_styles ||= load_additional_styles
     end
 
-    get %r{(.*)} do |url|
-      if data = url.match(/(.*)\.(css|js|slim|#{settings.static_ext})/)
-        content_type 'text/css'
+    get %r{(.*\..*)} do |url|
+      if data = url.match(/(.*)\.(css|js|json|zip|mp3|mp4|ogg|mpeg|pdf|slim|xml|png|gif|jpg|jpeg|svg|tiff|#{settings.static_ext})/)
+        raise not_found if not File.exists? ".#{data[1]}.#{data[2]}"
+        content_type case data[2]
+        when "css", "xml" then "text/#{data[2]}"
+        when "js" then "text/javascript"
+        when "mp3", "mp4", "ogg", "mpeg" then "audio/#{data[2]}"
+        when "json", "pdf", "zip" then "application/#{data[2]}"
+        when "png", "gif", "jpg", "jpeg", "svg", "tiff" then "image/#{data[2]}"
+        else "text/plain"
+        end
         File.read ".#{data[1]}.#{data[2]}"
       else
         raise not_found
