@@ -1,4 +1,3 @@
-require 'story/version'
 require 'story/meta'
 require 'sinatra'
 
@@ -11,7 +10,7 @@ module Story
 
   class Base < Sinatra::Base
     get '/' do
-      p "Test"
+      slim :index
     end
   end
 end
