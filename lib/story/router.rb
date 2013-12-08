@@ -3,7 +3,7 @@ module Story
     include Utils
 
     configure do
-      set :views, settings.views.to_s.gsub(/views$/, 'story/templates/story')
+      set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
       set :static_ext, false
