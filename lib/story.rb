@@ -9,6 +9,10 @@ module Story
   end
 
   class Base < Sinatra::Base
+    configure do
+      set :views, settings.views.gsub /views$/, 'story/templates/story'
+    end
+
     get '/' do
       slim :index
     end
