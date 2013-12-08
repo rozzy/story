@@ -6,7 +6,7 @@ module Story
       set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
-      set :static_ext, false
+      set :static_ext, ""
     end
 
     before do
@@ -14,7 +14,10 @@ module Story
     end
 
     get %r{(.*\..*)} do |url|
-      if data = url.match(/(.*)\.(css|js|json|zip|mp3|mp4|ogg|mpeg|pdf|rtf|txt|doc|slim|xml|png|gif|jpg|jpeg|svg|tiff|#{settings.static_ext})/)
+      user_ext = settings.static_ext
+      user_ext = user_ext.split "|" if user_ext.is_a? String
+      expr = /(.*)\.(css|js|json|zip|md|txt|mp3|mp4|ogg|mpeg|pdf|rtf|doc|slim|xml|png|gif|jpg|jpeg|svg|tiff|#{user_ext.join("|")})/
+      if data = url.match(expr)
         raise not_found if not File.exists? ".#{data[1]}.#{data[2]}"
         content_type case data[2]
         when "css", "xml" then "text/#{data[2]}"
