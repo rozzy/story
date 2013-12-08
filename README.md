@@ -1,1 +1,2 @@
-https://www.dartlang.org/docs/tutorials/
+# Story
+Gem for creating awesome personal blog.
