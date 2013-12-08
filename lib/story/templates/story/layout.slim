@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    meta charset="#{charset}"
+    title = page_title || default_title
+    == slim :meta
+    == slim :styles
+    == slim :scripts
+  body
+    == yield

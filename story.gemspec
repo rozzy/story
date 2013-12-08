@@ -5,7 +5,7 @@ require 'story/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "story"
-  spec.version       = Story::VERSION
+  spec.version       = Story::Meta::VERSION
   spec.authors       = ["Rozzy"]
   spec.email         = ["berozzy@gmail.com"]
   spec.description   = %q{Ruby blog engine}
