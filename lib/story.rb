@@ -1,11 +1,10 @@
-require "story/version"
-require "sinatra"
+require 'story/version'
+require 'sinatra'
 
 module Story
   class Base < Sinatra::Base
-    $db = Hash.new
-
-    include DataBase
-    include Router
+    get '/' do
+      p "Test"
+    end
   end
 end
