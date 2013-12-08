@@ -10,7 +10,9 @@ module Story
 
   class Base < Sinatra::Base
     configure do
-      set :views, settings.views.gsub /views$/, 'story/templates/story'
+      set :views, settings.views.to_s.gsub(/views$/, 'story/templates/story')
+      set :blog_title, Meta::DEFAULT_BLOG_TITLE
+      set :charset, Meta::CHARSET
     end
 
     get '/' do

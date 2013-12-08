@@ -1,8 +1,7 @@
 doctype html
 html
   head
-    meta charset="#{charset}"
-    title = page_title || default_title
+    title = settings.blog_title
     == slim :meta
     == slim :styles
     == slim :scripts
