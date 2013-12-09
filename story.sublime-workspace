@@ -1,0 +1,1548 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stylesh",
+				"styles_path"
+			],
+			[
+				"sty",
+				"additional_stylesheets"
+			],
+			[
+				"M",
+				"MyBlog"
+			],
+			[
+				"left",
+				"left-column"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"mail",
+				"mailconfig"
+			],
+			[
+				"error",
+				"error_h"
+			],
+			[
+				"dec",
+				"decimal"
+			],
+			[
+				"res",
+				"respond-to"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"doc",
+				"doc_img"
+			],
+			[
+				"border-",
+				"border-color:   (property)"
+			],
+			[
+				"ri",
+				"right_shadow"
+			],
+			[
+				"page",
+				"page_title"
+			],
+			[
+				"offe",
+				"offer_title"
+			],
+			[
+				"righ",
+				"rightside"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"sm",
+				"small_descr"
+			],
+			[
+				"me",
+				"menu_links"
+			],
+			[
+				"border",
+				"borderless"
+			],
+			[
+				"!",
+				"!important"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"info",
+				"infoblock"
+			],
+			[
+				"jo",
+				"jobs_list"
+			],
+			[
+				"lef",
+				"leftslide"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"bor",
+				"border-right"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"mob",
+				"mobile-margin-left"
+			],
+			[
+				"re",
+				"retina_display"
+			],
+			[
+				"button-",
+				"button-hover-color"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"cou",
+				"count_pages"
+			],
+			[
+				"ex",
+				"exists?"
+			],
+			[
+				"Fi",
+				"File"
+			],
+			[
+				"sett",
+				"settings"
+			],
+			[
+				"al",
+				"all_posts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 47,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.ru",
+			"settings":
+			{
+				"buffer_size": 93,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.slim",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/layout.slim",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/meta.slim",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/styles.slim",
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/styles/style.sass",
+			"settings":
+			{
+				"buffer_size": 40,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"inp ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 346.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/hckr/Dev/gems/__tests/story/story.sublime-workspace",
+		"/Users/hckr/Dev/gems/__tests/story/.gitignore",
+		"/Users/hckr/Dev/gems/__tests/story/style.css",
+		"/Users/hckr/Dev/gems/__tests/story/views/scripts.slim",
+		"/Users/hckr/Dev/gems/__tests/story/styles/style.css",
+		"/Users/hckr/Dev/gems/__tests/story/test.md",
+		"/Users/hckr/Dev/gems/__tests/story/test.txt",
+		"/Users/hckr/Desktop/Screen Shot 2013-12-08 at 10.37.28 PM.png",
+		"/Users/hckr/Dev/gems/__tests/story/styles/lol.txt",
+		"/Users/hckr/Dev/gems/__tests/story/styles/social.css",
+		"/Users/hckr/Dev/gems/story/lib/story/router.rb",
+		"/Users/hckr/Dev/gems/c.test/Gemfile",
+		"/Users/hckr/Dev/gems/c/Gemfile",
+		"/Users/hckr/Dev/gems/c/c.gemspec",
+		"/Users/hckr/Dev/gems/c/Rakefile",
+		"/Users/hckr/Dev/gems/c.publicpage/index.html",
+		"/Users/hckr/Dev/gems/c/lib/c/version.rb",
+		"/Users/hckr/Dev/gems/c/README.md",
+		"/Users/hckr/Dev/gems/mybox/mybox.gemspec",
+		"/Users/hckr/Downloads/code/blocks/using.rb",
+		"/Users/hckr/Downloads/code/blocks/using_test.rb",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/stylesheets/_profile.sass",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/stylesheets/_fonts.css.sass",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/javascripts/models/profile.js.coffee",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/stylesheets/fonts/gotham/config.css",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/javascripts/templates/car/_info.hamlc",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/javascripts/templates/profile/_info.hamlc",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/stylesheets/application.css.sass",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/stylesheets/_navbar.sass",
+		"/Users/hckr/Dev/BrandyMint/rocketwash/source/javascripts/templates/profile/_navbar.hamlc",
+		"/Users/hckr/Dev/mgstrl/views/not_found.slim",
+		"/Users/hckr/Dev/mgstrl/views/jobs.slim",
+		"/Users/hckr/Dev/mgstrl/views/gallery.slim",
+		"/Users/hckr/Dev/mgstrl/views/about.slim",
+		"/Users/hckr/Dev/mgstrl/views/contacts.slim",
+		"/Users/hckr/Dev/mgstrl/views/objects.slim",
+		"/Users/hckr/Dev/mgstrl/views/faq.slim",
+		"/Users/hckr/Dev/mgstrl/views/docs.slim",
+		"/Users/hckr/Dev/mgstrl/views/styles/objects.sass",
+		"/Users/hckr/Dev/mgstrl/views/styles/faq.sass",
+		"/Users/hckr/Dev/mgstrl/views/styles/contacts.sass",
+		"/Users/hckr/Dev/mgstrl/views/styles/index.sass",
+		"/Users/hckr/Dev/mgstrl/views/styles/docs.sass",
+		"/Users/hckr/Dev/mgstrl/public/main.js",
+		"/Users/hckr/Dev/mgstrl/functions.rb",
+		"/Users/hckr/Dev/mgstrl/public/slider.css",
+		"/Users/hckr/Dev/mgstrl/public/slider.js",
+		"/Users/hckr/Dev/mgstrl/config.ru",
+		"/Users/hckr/Dev/mgstrl/views/index.slim",
+		"/Users/hckr/Dev/mgstrl/views/menu.slim",
+		"/Users/hckr/Dev/mgstrl/router.rb",
+		"/Users/hckr/Dev/mgstrl/public/jquery.min.js",
+		"/Users/hckr/Dev/mgstrl/views/footer.slim",
+		"/Users/hckr/Dev/mgstrl/Gemfile",
+		"/Users/hckr/Dev/mgstrl/views/test.slim",
+		"/Users/hckr/Dev/mgstrl/views/link.slim",
+		"/Users/hckr/Dev/mgstrl/mgstrl.sublime-project",
+		"/Users/hckr/Dev/mgstrl/.gitignore",
+		"/Users/hckr/Dev/mgstrl/Rakefile",
+		"/Users/hckr/Dev/mgstrl/views/styles/menu.slim",
+		"/Users/hckr/Dev/esbv/layout.slim",
+		"/Users/hckr/Dev/gems/story/Rakefile",
+		"/Users/hckr/Dev/gems/story/Gemfile.lock",
+		"/Users/hckr/Dev/gems/story/story.gemspec",
+		"/Users/hckr/Dev/gems/story/lib/story.rb",
+		"/Users/hckr/Dev/gems/story/ruby-aws-tools-0.1.gem",
+		"/Users/hckr/Dev/gems/story/Gemfile",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/hckr/Dev/nikitin.pw/sword.nikitin.pw/Rakefile",
+		"/Users/hckr/Dev/nikitin.pw/sword.nikitin.pw/index.html",
+		"/Users/hckr/Dev/sword.nikitin.pw/index.slim",
+		"/Users/hckr/Dev/sword.nikitin.pw/style.sass",
+		"/Users/hckr/dev/blog/posts/234234.slim",
+		"/Users/hckr/dev/blog/posts/234.slim",
+		"/Users/hckr/dev/blog/posts/23423423423.md",
+		"/Users/hckr/dev/blog/config.ru",
+		"/Users/hckr/dev/blog/views/pages.slim",
+		"/Users/hckr/dev/blog/posts/ps23.slim",
+		"/Users/hckr/dev/blog/posts/ps2.slim",
+		"/Users/hckr/dev/blog/posts/p1 ps.md",
+		"/Users/hckr/dev/blog/Gemfile",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/hckr/dev/blog/blog.sublime-project",
+		"/Users/hckr/dev/blog/helpers/config.rb",
+		"/Users/hckr/dev/blog/.gitignore",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/ColorSublimeThemes/Peacock.tmTheme",
+		"/Volumes/Hckr/Dev/metiz-1/metiz.sublime-workspace",
+		"/Volumes/Hckr/Dev/habarok.com.ua/bootstrap/node_modules/bower/node_modules/inquirer/Inquirerjs.sublime-workspace",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Installed Packages/Zen Tabs.sublime-package",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Installed Packages/Ruby Slim.sublime-package",
+		"/Users/hckr/dev/blog/posts/p1.md",
+		"/Users/hckr/dev/blog/posts/l.md",
+		"/Users/hckr/dev/blog/views/layout.slim",
+		"/Users/hckr/Dev/blog/blog.sublime-workspace",
+		"/Users/hckr/dev/blog/views/styles/main.sass",
+		"/Users/hckr/dev/blog/app.rb",
+		"/Users/hckr/dev/blog/style/style.sass",
+		"/Users/hckr/dev/blog/views/index.slim",
+		"/Users/hckr/dev/blog/App.rb",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/hckr/Dev/blog/starter.rb",
+		"/Users/hckr/Dev/blog/app.rb",
+		"/Users/hckr/Dev/blog/gemfile",
+		"/Users/hckr/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/hckr/Dev/gems/story"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"",
+			"brand",
+			"light",
+			"fontello",
+			"min-width",
+			"min-w",
+			"Галлерея",
+			"[:mailconfig].",
+			"@pa",
+			"para",
+			"pa",
+			"\"",
+			"value",
+			"required=\"required\" ",
+			"true",
+			"required",
+			" \n                    ",
+			"{",
+			"mws",
+			"1185px",
+			"856px",
+			"$(this).data('h')",
+			"Объекты",
+			"url",
+			"__FILE__",
+			"\"",
+			"%2C",
+			"#link-to-gmap",
+			".hood",
+			".map.hood",
+			"spoiler",
+			" ",
+			"848484",
+			"5px",
+			"ccc",
+			"shadow",
+			"eet\"",
+			"Объекты",
+			".l",
+			";",
+			"h2",
+			"offers",
+			"history",
+			"-",
+			"–",
+			" –",
+			"\" ",
+			"\",",
+			" \"",
+			";",
+			"&nbsp;",
+			"td\n        | ",
+			"\n        | ",
+			"'Trebuchet MS', Arial, sans-serif",
+			"\n  border: 1px solid red",
+			"S'",
+			"'",
+			"Газстроймонтаж",
+			"«Газстроймонтаж»",
+			"\"",
+			"\".",
+			"\" ",
+			" \"",
+			"  br\n  br",
+			"br\n      br",
+			"800px",
+			", '",
+			"\"",
+			"bottom",
+			"top",
+			"inline-bl",
+			"displa",
+			"a.title",
+			"orange",
+			"margin0bot",
+			"&nbsp;",
+			"orange",
+			"!important",
+			"left_",
+			"\"/",
+			"ruby-aws-tools",
+			"&:hover, &:focus",
+			"@media #{$retina_display}",
+			"$retina_display",
+			"only",
+			" no-repeat",
+			"background: url(icons.png)",
+			"href=\"#\"",
+			"href=\"",
+			"0093C7",
+			"CAE4F1",
+			"a.button.twitter href=\"#\": span ",
+			"E93277",
+			".dribbble.blc\n                p.descr\n                    | Really love to design great stuff with <strong>Sketch</strong>, <strong>PS</strong> and <strong>AI</strong>.\n                a.button.dribbble href=\"#dribbble\": span View my designs at <strong>Dribbble</strong>",
+			"b",
+			"ejec",
+			"simple",
+			"super+shift+j",
+			"f",
+			"Nikita",
+			"doctype html\nhtml\n  head\n    meta charset=\"utf-8\"\n    link rel=\"author\" href=\"https://plus.google.com/106725853510406641388\"\n    meta name=\"keywords\" content=\"odessa, ukraine, portfolio, dribbble, github, twitter, blog, homepage, developer, designer, ruby, html, css, php, javascript, nodejs, sinatra, photoshop, illustrator, sketch, ui, ux, usability, typography\"\n    meta name=\"description\" content=\"Nikita Nikitin. Designer, developer from Odessa, UA.\"\n    base target=\"_top\"\n    link href=\"style.css\" rel=\"stylesheet\"\n    title Nikita Nikitin\n  body\n    | tests",
+			"p:",
+			"p",
+			"Proc.new { File.join(root, ",
+			"get",
+			"app.",
+			"get",
+			"ge",
+			"showPosts",
+			"getItems",
+			"setTitle",
+			"posts",
+			"Slim",
+			"ruby slim",
+			"vari",
+			"keywo",
+			"italic",
+			"title",
+			"high",
+			"search",
+			"func",
+			"me",
+			"method",
+			"false",
+			"refr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"story"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config.ru",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/index.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/layout.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/meta.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/styles.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "views/styles/style.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.691739490353,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"project": "story.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 133.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
