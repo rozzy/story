@@ -13,3 +13,8 @@ class MyBlog < Story::Base
     raise not_found
   end
 end
+
+# Another start version
+# app = Story::Base.new
+# app.settings.blog_title = 'Rozzy Blog'
+# run app
