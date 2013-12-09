@@ -1,3 +1,4 @@
+gem 'sinatra'
 gem 'story'
 gem 'slim'
 gem 'compass'
