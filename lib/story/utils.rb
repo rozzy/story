@@ -13,6 +13,12 @@ module Story
       raise LoadError
     end
 
+    def title *sections
+      sections.each do |section|
+        @title += "#{settings.title_separator}#{section.to_s}"
+      end
+    end
+
     def parse_file filename, extension = '', root = true
       file_path = "#{'.' if root}#{filename}.#{extension}"
       raise not_found if not File.exists? file_path

@@ -8,9 +8,12 @@ module Story
       set :charset, Meta::CHARSET
       set :static_ext, ''
       set :sass, Compass.sass_engine_options
+      set :title_separator, " | "
     end
 
     before do
+      @title = settings.blog_title
+      @header_needed = @footer_needed = true
       @additional_styles ||= load_additional_styles
     end
 
@@ -24,10 +27,12 @@ module Story
     end
 
     get '/' do
+      title "Posts"
       slim :index
     end
 
     not_found do
+      title "404"
       'Page not found'
     end
   end
