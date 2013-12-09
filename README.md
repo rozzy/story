@@ -15,4 +15,20 @@ Or add it to your Gemfile `gem "story"` and use `$ bundle install` in terminal p
 Story can work “out of the box”. You don't need any complex customizations or settings.  
 First of all you should require all necessary gems in your **Gemfile**:
 ```ruby
+gem 'sinatra'
+gem 'story'
+gem 'slim'
+gem 'compass'
+gem 'sass'
+```
+
+The simpliest way to start working with your blog with default settings is:  
+```ruby
+# app.rb
+require 'story'
+Story::Base.run!
+```
+And in your terminal: 
+```bash
+$ ruby app.rb
 ```
