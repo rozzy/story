@@ -4,3 +4,5 @@ source 'https://rubygems.org'
 gemspec
 gem 'sinatra'
 gem 'slim'
+gem 'sass'
+gem 'compass'
