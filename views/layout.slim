@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title = settings.blog_title
+    == slim :meta
+    == slim :styles
+    == slim :scripts
+  body
+    == yield

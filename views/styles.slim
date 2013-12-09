@@ -1,0 +1,5 @@
+link rel='stylesheet' href='style.css'
+- if @additional_styles
+  - settings.additional_stylesheets.each do |stylesheet|
+    - if File.exists? stylesheet
+      link rel='stylesheet' href='#{stylesheet}'
