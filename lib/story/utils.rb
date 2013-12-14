@@ -18,7 +18,6 @@ module Story
       begin
         configuration_file = File.exists?('dbconfig.yml') ? 'dbconfig.yml' : File.join(File.dirname(__FILE__), 'dbconfig.yml')
         dbconfig = YAML::load(File.open(configuration_file))
-        p dbconfig
         ActiveRecord::Base.logger = Logger.new(STDERR)
         ActiveRecord::Base.establish_connection(dbconfig)
         true
