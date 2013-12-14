@@ -10,6 +10,7 @@ module Story
       set :static_ext, ''
       set :sass, Compass.sass_engine_options
       set :title_separator, " | "
+      set :db_adapters, nil
     end
 
     before do
