@@ -13,7 +13,7 @@ module Story
           @errors += "Database configuration file not found."
           false
         rescue => e
-          p e, e.backtrace
+          p e, e.backtrace # TODO: Cleanup
           @errors += e.to_s
           false
         end
