@@ -4,8 +4,8 @@ Gem for creating awesome personal blog.
 
 [Installing](#installation)  
 [Setting up](#setting-up)  
-[Using](#using)  
-[API](#api)
+Using (in progress)      
+API (in progress)  
 
 ## Installation
 Story is a RubyGem, so simply install it with `gem install story`.  
