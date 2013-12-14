@@ -4,8 +4,8 @@ module Story
       def db_connected?
         @errors ||= ''
         begin
-          configuration_file = File.exists? 'dbconfig.yml' ? 'dbconfig.yml' : File.join(File.dirname(__FILE__), 'config.yml')
-          p File.join(File.dirname(__FILE__), 'config.yml')
+          configuration_file = File.exists?('dbconfig.yml') ? 'dbconfig.yml' : File.join(File.dirname(__FILE__), 'config.yml')
+          p configuration_file
           dbconfig = YAML::load File.open configuration_file
           ActiveRecord::Base.logger = Logger.new STDERR
           ActiveRecord::Base.establish_connection dbconfig
