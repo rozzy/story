@@ -1,4 +1,11 @@
+require 'sqlite3'
 require 'story'
+
+db = SQLite3::Database.new 'file.db'
+
+{ 'one' => 1, 'two' => 2 }.each do |pair|
+  db.execute 'insert into numbers values (?, ?)', pair
+end
 
 class MyBlog < Story::Base
   configure do

@@ -1,3 +1,4 @@
+gem 'sqlite3'
 gem 'sinatra'
 gem 'story'
 gem 'slim'
