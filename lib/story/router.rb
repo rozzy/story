@@ -1,6 +1,7 @@
 module Story
   class Base < Sinatra::Base
     include Utils
+    include DB::Utils
 
     configure do
       set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
