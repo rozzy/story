@@ -20,7 +20,6 @@ class MyBlog < Story::Base
     slim :index
   end
 end
-
 # Another start version
 # app = Story::Base.new
 # app.settings.blog_title = 'Rozzy Blog'
