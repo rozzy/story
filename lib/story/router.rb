@@ -12,6 +12,7 @@ module Story
     end
 
     before do
+      raise error @errors if not db_connected?
       @title = settings.blog_title
       @header_needed = @footer_needed = true
       @additional_styles ||= load_additional_styles
@@ -29,6 +30,11 @@ module Story
     get '/' do
       title "Posts"
       slim :index
+    end
+
+    error do |*errors|
+      @errors = errors
+      slim :error_page
     end
 
     not_found do
