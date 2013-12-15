@@ -1,6 +1,7 @@
 module Story
   class Base < Sinatra::Base
     include Utils
+    include Errors
     include DB::Utils
 
     configure do
@@ -35,6 +36,7 @@ module Story
     end
 
     error do |*errors|
+      p "test"
       @errors = errors
       slim :error_page
     end

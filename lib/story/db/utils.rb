@@ -26,13 +26,19 @@ module Story
             adapters = default_adapters.concat(settings.db_adapters.each(&:downcase!))
           end
         else adapters = default_adapters end
-
-        !config["adapter"] || !config["database"] || !adapters.include?(config["database"].downcase)
+        if !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then
+          @db_error_type = 0 if !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase))
+          @db_error_type = 1 if !config.has_key?("adapter")
+          @db_error_type = 2 if !config.has_key?("database")
+          @db_error_type = 3 if !config.has_key?("adapter") and !config.has_key?("database")
+          true
+        else false end
       end
 
       def parse_configuration_from file
         config = YAML::load File.open file
-        raise error "Database configuration file contains errors." if some_db_errors_in config
+        error_types = ["unsupported_db_adapter", "no_db_adapter_specified", "no_database_specified", "no_db_adapter_and_database_specified"]
+        send "raise_#{error_types[@db_error_type]}".to_sym, file, config if some_db_errors_in config
         config
       end
     end
