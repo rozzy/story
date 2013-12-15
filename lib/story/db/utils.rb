@@ -2,7 +2,7 @@ module Story
   module DB
     module Utils
       def db_connected?
-        @errors ||= ''
+        @errors ||= []
         begin
           configuration_file = File.exists?('dbconfig.yml') ? 'dbconfig.yml' : File.join(File.dirname(__FILE__), 'config.yml')
           dbconfig = parse_configuration_from configuration_file
@@ -10,11 +10,10 @@ module Story
           ActiveRecord::Base.establish_connection dbconfig
           true
         rescue Errno::ENOENT
-          @errors += "Database configuration file not found."
+          @errors.push "Database configuration file not found."
           false
-        rescue => e
-          p e, e.backtrace # TODO: Cleanup
-          @errors += e.to_s
+        rescue Errors::DatabaseError => e
+          @errors.push e
           false
         end
       end
@@ -38,7 +37,7 @@ module Story
       def parse_configuration_from file
         config = YAML::load File.open file
         error_types = ["unsupported_db_adapter", "no_db_adapter_specified", "no_database_specified", "no_db_adapter_and_database_specified"]
-        send "raise_#{error_types[@db_error_type]}".to_sym, file, config if some_db_errors_in config
+        raise Errors::DatabaseError, send("raise_#{error_types[@db_error_type]}".to_sym, file, config) if some_db_errors_in config
         config
       end
     end

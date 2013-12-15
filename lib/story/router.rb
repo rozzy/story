@@ -5,6 +5,7 @@ module Story
     include DB::Utils
 
     configure do
+      enable :show_exceptions
       set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
@@ -15,10 +16,16 @@ module Story
     end
 
     before do
-      raise error @errors if not db_connected?
-      @title = settings.blog_title
-      @header_needed = @footer_needed = true
-      @additional_styles ||= load_additional_styles
+      begin
+        raise ConnectionError if not db_connected?
+        @title = settings.blog_title
+        p db_connected?
+        @header_needed = @footer_needed = true
+        @additional_styles ||= load_additional_styles
+      rescue ConnectionError => e
+        p @errors
+        status 500
+      end
     end
 
     get %r{(.*\..*)} do |url|
@@ -33,12 +40,6 @@ module Story
     get '/' do
       title "Posts"
       slim :index
-    end
-
-    error do |*errors|
-      p "test"
-      @errors = errors
-      slim :error_page
     end
 
     not_found do
