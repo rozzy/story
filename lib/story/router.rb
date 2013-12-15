@@ -23,8 +23,8 @@ module Story
         @header_needed = @footer_needed = true
         @additional_styles ||= load_additional_styles
       rescue ConnectionError => e
-        p @errors
-        status 500
+        # p slim :error_page
+        p "break"
       end
     end
 
@@ -42,7 +42,13 @@ module Story
       slim :index
     end
 
+    get '/e:error' do |error|
+      status error
+      slim :error_page
+    end
+
     not_found do
+      status 404
       title "404"
       'Page not found'
     end
