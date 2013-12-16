@@ -13,18 +13,22 @@ module Story
           @errors.push "Database configuration file not found."
           false
         rescue Errors::DatabaseError => e
-          @errors.push e
+          @errors.push e.message
           false
         end
       end
 
-      def some_db_errors_in config
+      def parse_adapters
         default_adapters = ["jdbc", "fb", "frontbase", "mysql", "openbase", "oci", "postgresql", "sqlite3", "sqlite2", "sqlite", "sqlserver", "sybsql"]
         if settings.db_adapters.is_a? (Array) 
           if settings.db_adapters.select { |b| b.is_a? (String) }.size > 0
-            adapters = default_adapters.concat(settings.db_adapters.each(&:downcase!))
-          end
-        else adapters = default_adapters end
+            default_adapters.concat(settings.db_adapters.each(&:downcase!))
+          else default_adapters end
+        else default_adapters end
+      end
+
+      def some_db_errors_in config
+        adapters = parse_adapters
         if !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then
           @db_error_type = 0 if !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase))
           @db_error_type = 1 if !config.has_key?("adapter")

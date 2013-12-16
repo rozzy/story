@@ -19,6 +19,18 @@ module Story
       end
     end
 
+    def title_type type_given = false
+      @title = "(#{type_given}) #{@title}" if type_given
+    end
+
+    def get_last_session_url
+      @last_session = request.cookies["session_url"] != "" ? request.cookies["session_url"] : '/'
+    end
+
+    def set_session_url
+      response.set_cookie "session_url", request.path_info if !(request.path_info.match /^e_/).is_a? NilClass and @last_session != request.path_info
+    end
+
     def parse_file filename, extension = '', root = true
       file_path = "#{'.' if root}#{filename}.#{extension}"
       raise not_found if not File.exists? file_path

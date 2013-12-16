@@ -11,19 +11,23 @@ module Story
     class ConnectionError < Exception; end
 
     def raise_unsupported_db_adapter file, config
-      ["Database configuration file contains errors!", "Unsupported database adapter <b>#{config["adapter"]}</b> in database config file (#{file})."]
+      "Unsupported database adapter <b>#{config["adapter"]}</b> in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_db_adapter_specified file, config
-      ["Database configuration file contains errors!", "No database adapter specified in database config file (#{file})."]
+      "No database adapter specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_database_specified file, config
-      ["Database configuration file contains errors!", "No database file or data specified in database config file (#{file})."]
+      "No database file or data specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_db_adapter_and_database_specified file, config
-      ["Database configuration file contains errors!", "No database file or data specified in database config file (#{file})."]
+      "No database file and data specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
+    end
+
+    def check_on_error_page
+      @on_error_page = request.path_info.downcase.match "/e_([a-z0-9_]+)"
     end
   end
 end

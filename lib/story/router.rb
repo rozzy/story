@@ -6,6 +6,7 @@ module Story
 
     configure do
       enable :show_exceptions
+      set :environment, :development
       set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
@@ -17,14 +18,14 @@ module Story
 
     before do
       begin
-        raise ConnectionError if not db_connected?
         @title = settings.blog_title
-        p db_connected?
         @header_needed = @footer_needed = true
         @additional_styles ||= load_additional_styles
+        raise ConnectionError if not db_connected?
+        get_last_session_url
       rescue ConnectionError => e
-        # p slim :error_page
-        p "break"
+        check_on_error_page
+        if not @on_error_page then redirect '/e_config' end
       end
     end
 
@@ -42,9 +43,20 @@ module Story
       slim :index
     end
 
-    get '/e:error' do |error|
+    get %r{e([0-9]+)} do |error|
       status error
       slim :error_page
+    end
+
+    get %r{e_([a-zA-Z0-9_]+)} do |error|
+      redirect @last_session != request.path_info ? @last_session : '/' if @errors.size == 0
+      title @errors.size > 0 ? @errors.first : "Error occured"
+      title_type :error
+      slim :error_page
+    end
+
+    after do
+      set_session_url
     end
 
     not_found do
