@@ -1,9 +1,11 @@
 doctype html
 html
   head
-    title = @title
+    title == @title
     == slim :meta
     == slim :styles
     == slim :scripts
   body
+    == slim :header if @header_needed
     == yield
+    == slim :footer if @footer_needed

@@ -11,19 +11,19 @@ module Story
     class ConnectionError < Exception; end
 
     def raise_unsupported_db_adapter file, config
-      "Unsupported database adapter <b>#{config["adapter"]}</b> in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
+      "Unsupported database adapter <b>#{config["adapter"]}</b> in database config file (#{"Story gem root/" if !(/#{file}/ =~ Gem.dir).is_a? NilClass }#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_db_adapter_specified file, config
-      "No database adapter specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
+      "No database adapter specified in database config file (#{"Story gem root/" if !(/#{file}/ =~ Gem.dir).is_a? NilClass }#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_database_specified file, config
-      "No database file or data specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
+      "No database file or data specified in database config file (#{"Story gem root/" if !(/#{file}/ =~ Gem.dir).is_a? NilClass }#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def raise_no_db_adapter_and_database_specified file, config
-      "No database file and data specified in database config file (#{File.basename(File.dirname(file))}/#{File.basename(file)})."
+      "No database file and data specified in database config file (#{"Story gem root/" if !(/#{file}/ =~ Gem.dir).is_a? NilClass }#{File.basename(File.dirname(file))}/#{File.basename(file)})."
     end
 
     def check_on_error_page

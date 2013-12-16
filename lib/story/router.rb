@@ -7,7 +7,7 @@ module Story
     configure do
       enable :show_exceptions
       set :environment, :development
-      set :views, settings.views.to_s.gsub(/views$/, '/templates/story')
+      set :views, settings.views.to_s.gsub(/views$/, 'templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
       set :static_ext, ''
