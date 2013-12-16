@@ -1,2 +1,2 @@
 adapter: sqlite3
-databasse: blog.db
+database: blog.db
