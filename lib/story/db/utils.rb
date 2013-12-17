@@ -32,10 +32,11 @@ module Story
       def some_db_errors_in config
         adapters = parse_adapters
         if !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then
-          @db_error_type = case when !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then 0
+          @db_error_type = case when !config.has_key?("adapter") && !adapters.include?(config["adapter"].downcase) then 0
                                 when !config.has_key?("adapter") then 1
                                 when !config.has_key?("database") then 2
-                                when !config.has_key?("adapter") and !config.has_key?("database") then 3
+                                when !config.has_key?("adapter") && !config.has_key?("database") then 3
+                            end
           true
         else false end
       end
