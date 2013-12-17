@@ -45,18 +45,19 @@ module Story
         end
       end 
 
-      def some_db_errors_in config
+      def some_db_errors_in? config
         adapters = parse_adapters
-        if !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then
+        errors_found = !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase))
+        if errors_found then
           @db_error_type = define_db_error_type adapters, config
-          true
-        else false end
+        end
+        errors_found
       end
 
       def parse_configuration_from file
         config = YAML::load File.open file
         error_types = ["unsupported_db_adapter", "no_db_adapter_specified", "no_database_specified", "no_db_adapter_and_database_specified"]
-        raise Errors::DatabaseError, send("raise_#{error_types[@db_error_type]}".to_sym, file, config) if some_db_errors_in config
+        raise Errors::DatabaseError, send("raise_#{error_types[@db_error_type]}".to_sym, file, config) if some_db_errors_in? config
         config
       end
     end
