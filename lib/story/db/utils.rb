@@ -22,8 +22,12 @@ module Story
         settings.instance_eval { self.respond_to? setting }
       end
 
+      def get_list_of_db_adapters
+        ["jdbc", "fb", "frontbase", "mysql", "openbase", "oci", "postgresql", "sqlite3", "sqlite2", "sqlite", "sqlserver", "sybsql"]
+      end
+
       def parse_adapters
-        default_adapters = ["jdbc", "fb", "frontbase", "mysql", "openbase", "oci", "postgresql", "sqlite3", "sqlite2", "sqlite", "sqlserver", "sybsql"]
+        default_adapters = get_list_of_db_adapters
         if sinatra_setting_exists :db_adapters and settings.db_adapters.select { |b| b.is_a? (String) }.size > 0 and settings.db_adapters.is_a? (Array)
             default_adapters.concat(settings.db_adapters.each(&:downcase!))
         else default_adapters end
