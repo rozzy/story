@@ -17,7 +17,7 @@ module Story
           false
         end
       end
-      
+
       def sinatra_setting_exists setting
         settings.instance_eval { self.respond_to? setting }
       end
@@ -32,10 +32,10 @@ module Story
       def some_db_errors_in config
         adapters = parse_adapters
         if !config.has_key?("adapter") or !config.has_key?("database") or !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then
-          @db_error_type = 0 if !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase))
-          @db_error_type = 1 if !config.has_key?("adapter")
-          @db_error_type = 2 if !config.has_key?("database")
-          @db_error_type = 3 if !config.has_key?("adapter") and !config.has_key?("database")
+          @db_error_type = case when !(config.has_key?("adapter") and adapters.include?(config["adapter"].downcase)) then 0
+                                when !config.has_key?("adapter") then 1
+                                when !config.has_key?("database") then 2
+                                when !config.has_key?("adapter") and !config.has_key?("database") then 3
           true
         else false end
       end
