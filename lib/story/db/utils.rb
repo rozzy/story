@@ -26,10 +26,13 @@ module Story
         ["jdbc", "fb", "frontbase", "mysql", "openbase", "oci", "postgresql", "sqlite3", "sqlite2", "sqlite", "sqlserver", "sybsql"]
       end
 
+      def concat_default_and_user_adapters?
+        sinatra_setting_exists :db_adapters and settings.db_adapters.select { |b| b.is_a? (String) }.size > 0 and settings.db_adapters.is_a? (Array)
+      end
+
       def parse_adapters
         default_adapters = get_list_of_db_adapters
-        if sinatra_setting_exists :db_adapters and settings.db_adapters.select { |b| b.is_a? (String) }.size > 0 and settings.db_adapters.is_a? (Array)
-            default_adapters.concat(settings.db_adapters.each(&:downcase!))
+        if concat_default_and_user_adapters? then default_adapters.concat(settings.db_adapters.each(&:downcase!))
         else default_adapters end
       end
 
