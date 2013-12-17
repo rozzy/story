@@ -18,8 +18,8 @@ module Story
         end
       end
 
-      def sinatra_setting_exists setting
-        settings.instance_eval { self.respond_to? setting }
+      def sinatra_setting_exists? setting
+        settings.respond_to? setting
       end
 
       def get_list_of_db_adapters
@@ -27,7 +27,7 @@ module Story
       end
 
       def concat_default_and_user_adapters?
-        sinatra_setting_exists :db_adapters and settings.db_adapters.select { |b| b.is_a? (String) }.size > 0 and settings.db_adapters.is_a? (Array)
+        sinatra_setting_exists? :db_adapters and settings.db_adapters.select { |b| b.is_a? (String) }.size > 0 and settings.db_adapters.is_a? (Array)
       end
 
       def parse_adapters
