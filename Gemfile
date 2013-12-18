@@ -6,3 +6,4 @@ gem 'sinatra'
 gem 'slim'
 gem 'sass'
 gem 'compass'
+gem 'coveralls', require: false
