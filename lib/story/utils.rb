@@ -19,6 +19,10 @@ module Story
       end
     end
 
+    def sinatra_setting_exists? setting
+      settings.respond_to? setting
+    end
+
     def title_type type_given = false
       @title = "(#{type_given}) #{@title}" if type_given
     end
@@ -28,7 +32,7 @@ module Story
     end
 
     def set_session_url
-      response.set_cookie "session_url", request.path_info if !(request.path_info.match /^e_/).is_a? NilClass and @last_session != request.path_info
+      response.set_cookie "session_url", request.path_info if request.path_info.match(/^e_/).is_a? NilClass and @last_session != request.path_info
     end
 
     def parse_file filename, extension = '', root = true
