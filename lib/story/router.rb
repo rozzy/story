@@ -19,25 +19,10 @@ module Story
       set :db_adapters, nil
     end
 
-    before do
-      begin
-        @title = settings.blog_title
-        @header_needed = @footer_needed = true
-        @additional_styles ||= load_additional_styles
-        raise ConnectionError if not db_connected?
-        get_last_session_url
-      rescue ConnectionError => e
-        check_on_error_page
-        if not @on_error_page then redirect '/e_config' end
-      end
-    end
+    before do initialization end
 
     get %r{(.*\..*)} do |url|
-      user_ext = sinatra_setting_exists?(:static_ext) && settings.static_ext.is_a?(String) ? settings.static_ext.split('|') : ''
-      expr = /(.*)\.(json|zip|md|txt|mp3|mp4|ogg|mpeg|pdf|rtf|doc|slim|xml|png|gif|jpg|jpeg|svg|tiff|#{user_ext.join('|')})/
-      if data = url.match(expr)
-        parse_file data[1], data[2]
-      else raise not_found end
+      parse_static_files_from url
     end
 
     get '/' do
