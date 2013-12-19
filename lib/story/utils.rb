@@ -6,8 +6,8 @@ module Story
       raise LoadError
     end
 
-    def self.setup_environment
-      p File.exists? 'story_config.yml'
+    def self.sss
+      p methods #Dir.glob settings.story_config_root
       if File.exists? 'story_config.yml' and config = YAML::load(File.open('story_config.yml'))
         p config
       end

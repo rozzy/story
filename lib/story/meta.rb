@@ -4,6 +4,7 @@ module Story
     VERSION = '0.0.5'
     CHARSET = 'utf-8'
     DEFAULT_BLOG_TITLE = 'Personal Blog'
+    CONFIG_ROOT = '/'
   end
 
   module Errors

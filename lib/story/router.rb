@@ -4,19 +4,20 @@ module Story
     include Errors
     include DB::Utils
 
+
     configure do
+      config = YAML::load(File.open('story_config.yml'))
       enable :show_exceptions
-      set :environment, Proc.new {Story::Utils.setup_environment}
+      set :environment, File.exists?('story_config.yml') && config.is_a?(Hash) && config.has_key?("environment") ? config["environment"].to_sym : :development
       set :views, settings.views.to_s.gsub(/views$/, 'templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
       set :static_ext, nil
       set :sass, Compass.sass_engine_options
-      set :title_separator, ": "
+      set :story_config_root, Meta::CONFIG_ROOT
+      set :title_separator, ': '
       set :db_adapters, nil
     end
-
-    p settings.environment
 
     before do
       begin
