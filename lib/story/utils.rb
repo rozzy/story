@@ -1,16 +1,24 @@
 module Story
   module Utils
-    def load_additional_styles
-      begin
-        settings.additional_stylesheets
-      rescue NoMethodError
-      end
-    end
-
     def self.lib_dir
       ["#{File.dirname(File.expand_path($0))}/../lib/#{Meta::NAME}", "#{Gem.dir}/gems/#{Meta::NAME}-#{Meta::VERSION}/lib/#{Meta::NAME}"]
       .each {|lib| return i if File.readable? lib }
       raise LoadError
+    end
+
+    def self.setup_environment
+      p File.exists? 'story_config.yml'
+      if File.exists? 'story_config.yml' and config = YAML::load(File.open('story_config.yml'))
+        p config
+      end
+      :development
+    end
+
+    private
+
+    def load_additional_styles
+      return settings.additional_stylesheets if sinatra_setting_exists? :additional_stylesheets
+      false
     end
 
     def title *sections

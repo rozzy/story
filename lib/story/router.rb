@@ -6,7 +6,7 @@ module Story
 
     configure do
       enable :show_exceptions
-      set :environment, :development
+      set :environment, Proc.new {Story::Utils.setup_environment}
       set :views, settings.views.to_s.gsub(/views$/, 'templates/story')
       set :blog_title, Meta::DEFAULT_BLOG_TITLE
       set :charset, Meta::CHARSET
@@ -15,6 +15,8 @@ module Story
       set :title_separator, ": "
       set :db_adapters, nil
     end
+
+    p settings.environment
 
     before do
       begin

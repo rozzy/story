@@ -10,6 +10,8 @@ module Story
     class DatabaseError < Exception; end
     class ConnectionError < Exception; end
 
+    private
+
     def print_config_file_location
       "#{"STORY_GEM_ROOT/" if !(/#{Gem.dir}/ =~ file).is_a? NilClass }#{File.basename(File.dirname(file))}/#{File.basename(file)}"
     end
