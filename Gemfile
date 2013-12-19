@@ -1,4 +1,4 @@
-gem 'sqlite3'
+source 'https://rubygems.org'
 gem 'sinatra'
 gem 'story'
 gem 'slim'
